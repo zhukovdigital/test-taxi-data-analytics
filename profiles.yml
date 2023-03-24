@@ -2,19 +2,10 @@ customer_service_analytics:
 
   target: cs_dev
   outputs:
-    cs_dev:
+      cs_production:
       type: clickhouse
-      schema: cs_dev
-      password: ''
-    
-    cs_test:
-      type: clickhouse
-      schema: cs_test
-      password: ''
-
-    cs_production:
-      type: clickhouse
-      schema: cs_production
+      schema: customer_production
+      host: 35.189.109.115
       password: ''
 
     
